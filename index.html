@@ -25,27 +25,47 @@
             <h1>Création de post-it</h1>
             <h2>Remplissez les champs ci-dessous</h2>
             <!-- TODO: Debug fieldset responsive view in native browser -->
-            <fieldset>
-                <legend>
-                    <b>Type de post-it</b></legend>
-                <p>Le joueur 1 se place au centre du terrain en direction du but de gauche. Le joueur 2 se place à la même hauteur que le premier joueur, mais contre la bande gauche.</p>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    <b>Points valeurs</b></legend>
-                <ol type="A">
-                    <li>Le joueur 2 se met à courir en direction du but, à mi-distance de celui-ci, le joueur 1 passe la balle au joueur 2.</li>
-                    <li>Le joueur 2 réceptionne et conduit la balle en direction du bus, et tir au but.</li>
-                </ol>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    <b>Validation</b></legend>
-                <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get">
+            <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get">
+                <fieldset>
+                    <legend>
+                        <b>Type de post-it</b></legend>
+                    <p>De quel type de carte s'agit-il :</p>
+                    <input type="radio" name="type" value="task"> Tâche
+                    <br>
+                    <input type="radio" name="type" value="userStory"> User Story or Raw Item
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <b>Carte additionnelle</b></legend>
+                    <p>S'agit-il d'une tâche additionnelle à l'actuel Sprint :</p>
+                    <input type="checkbox" name="add" value="addTrue"> Oui
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <b>Points valeurs</b></legend>
+                    <select>
+                        <option value="0">0</option>
+                        <option value="0.5">0.5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="8">8</option>
+                        <option value="13">13</option>
+                        <option value="20">20</option>
+                        <option value="40">40</option>
+                        <option value="infinity">&infin;</option>
+                        <option value="unknown">?</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <b>Validation</b></legend>
+
                     <p>Hello world !</p>
                     <input type="submit" value="Submit here">
-                </form>
-            </fieldset>
+                </fieldset>
+            </form>
         </div>
     </div>
 

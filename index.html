@@ -24,15 +24,14 @@
         <div class="viewContent">
             <h1>Création de post-it</h1>
             <h2>Remplissez les champs ci-dessous</h2>
-            <!-- TODO: Debug fieldset responsive view in native browser -->
             <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get">
                 <fieldset>
                     <legend>
                         <b>Type de post-it</b></legend>
                     <p>De quel type de carte s'agit-il :</p>
-                    <input type="radio" name="type" value="task"> Tâche
+                    <input class="radioBtn" type="radio" name="type" value="task"> Tâche
                     <br>
-                    <input type="radio" name="type" value="userStory"> User Story or Raw Item
+                    <input class="radioBtn" type="radio" name="type" value="userStory"> User Story or Raw Item
                 </fieldset>
                 <fieldset>
                     <legend>

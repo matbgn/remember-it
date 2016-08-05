@@ -13,6 +13,9 @@
 
     <!--stylesheet and icons-->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <!--scripts-->
+    <script src="assets/js/previewImage.js"></script>
 </head>
 
 <body>
@@ -30,7 +33,7 @@
                     <legend>
                         <b>Tâche</b></legend>
                     <p>De quoi parle cette carte :</p>
-                    <input type="text" name="description" placeholder="Description de la tâche">
+                    <input type="text" name="description" placeholder="Description de la tâche" autofocus required>
                 </fieldset>
                 <fieldset>
                     <legend>
@@ -70,12 +73,18 @@
                     <p>Quelle est la date buttoire :</p>
                     <input type="date" name="deadline">
                 </fieldset>
+                    <fieldset>
+                        <legend>
+                            <b>Image</b></legend>
+                        <p>Quelle image de fond :</p>
+                        <input type="file" name="image">
+                        <br>
+                        <img id="preview" src="#" alt="Preview" width="128"/>
+                    </fieldset>
                 <fieldset>
                     <legend>
                         <b>Validation</b></legend>
-
-                    <p>Hello world !</p>
-                    <input type="submit" value="Submit here">
+                    <input type="submit" value="Créer le post-it">
                 </fieldset>
             </form>
         </div>
